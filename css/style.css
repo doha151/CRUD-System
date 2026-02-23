@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(66, 66, 66);
+}
+input, textarea{
+    background-color: transparent !important;
+    color: white !important;
+}
+input::placeholder , textarea::placeholder{
+  color: rgba(255, 255, 255, 0.582) !important;
+}

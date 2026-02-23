@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+<body class="text-white">
+    <div class="main-heading pt-5 text-info">
+        <div class="container">
+            <h2 class="text-center fw-bold">CURD System</h2>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="product-info shadow-lg p-3">
+                        <form>
+                            <div class="input-gro mt-3">
+                                <label for="ProName">Product Name : <span class="text-danger">*</span></label>
+                                <input id="proName" class="form-control rounded-5 mt-2" type="text" id="ProName" placeholder="Ex: Samsung" required>
+                            </div>
+                            <div class="input-gro mt-3">
+                                <label for="ProPrice">Product Price <span class="text-danger">*</span></label>
+                                <input id="proPrice" class="form-control rounded-5 mt-2" type="text" id="ProPrice" placeholder="Ex: 5000" required>
+                            </div>
+                             <div class="input-gro mt-3">
+                                <label for="ProCategory">Product Category <span class="text-danger">*</span></label>
+                                <input id="proCategory" class="form-control rounded-5 mt-2" type="text" id="ProCategory" placeholder="Ex: Mobile" required>
+                            </div>
+                            <div class="input-gro mt-3">
+                                <label>Product Description <span class="text-danger">*</span></label>
+                                <textarea id="proDesc" class="form-control rounded-5 mt-2" placeholder="Details..." style="resize: none;"></textarea>
+                            </div>
+                            <button id="btn" class="btn btn-outline-info mt-3 mx-auto d-block rounded-5">Add Product</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="input-gro mt-3">
+                        <input id="search" class="form-control rounded-5 mt-2" type="text" placeholder="Search By Name">
+                    </div>
+                    <div class="Pros-info-table shadow-lg p-3 overflow-auto">
+                        <table class="table table-dark table-hover" style="min-width: 800px;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Category</th>
+                                    <th>Description</th>
+                                    <th>Controls</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
